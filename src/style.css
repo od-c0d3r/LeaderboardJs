@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lobster&display=swap');
+
 main {
+    font-family: 'Coming Soon', cursive;
+    position: relative;
+    top: 100px;
     display: grid;
     grid-gap: 35px;
     grid-template-columns: auto auto;
@@ -6,12 +11,12 @@ main {
 }
 
 #boardTitle {
-    /* justify-self: start; */
-    grid-row: 1 / 2;
-    grid-column: 1 / 3;
+    position: absolute;
+    top: -90px;
+    font-size: xx-large;
 }
 
-#customers {
+#table {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
 
@@ -19,25 +24,25 @@ main {
     width: 350px;
 }
 
-#customers td,
-#customers th {
+#table td,
+#table th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#customers tr:nth-child(even) {
+#table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-#customers tr:hover {
+#table tr:hover {
     background-color: #ddd;
 }
 
-#customers th {
+#table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: #a092f0;
     color: white;
 }
 

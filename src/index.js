@@ -1,10 +1,5 @@
-// import _ from 'lodash';
 import './style.css';
+import data from './data';
+import showData from './display';
 
-// function component() {
-//     const element = document.createElement('div');
-//     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-//     return element;
-// }
-
-// document.body.appendChild(component());
+showData(data);
