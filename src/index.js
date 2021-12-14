@@ -1,5 +1,5 @@
-import './style.css';
-import data from './data';
-import showData from './display';
+import './style.scss';
+import data from './data.js';
+import showData from './display.js';
 
 showData(data);
