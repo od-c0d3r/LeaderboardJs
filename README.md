@@ -1,12 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# LeaderboardJs
 
-> One paragraph statement about the project.
+> Milestone 1 : Set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features.
 
-![screenshot](./doc/app_screenshot.png)
+<div style="float:right;">
 
-Additional description about the project and its features.
+<img align="right" src="./doc/app_screenshot.jpeg" style="width:450px;">
+
+</div>
 
 ## Built With
 
@@ -20,23 +22,18 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps
 
-### Prerequisites
+ - from your terminal enter in sequence 
+   - `git clone https://github.com/od-c0d3r/LeaderboardJs.git`
+   - `code LeaderboardJs`
+   - `npm i`
+   - `npm start`
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 ## Authors
 
-👤 **Author1**
+👤 **Omar R.**
 
 - GitHub: [@od-c0d3r](https://github.com/od-c0d3r)
 - Twitter: [@od-coder](https://twitter.com/od-coder)
