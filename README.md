@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://od-c0d3r.github.io/LeaderboardJs/dist/)
 
 
 ## Getting Started
