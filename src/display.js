@@ -21,7 +21,7 @@ export function updateTable(data) {
 }
 
 export function showData(data, sorted = false) {
-  let arr = sorted ? data.sort(compare) : data;
+  const arr = sorted ? data.sort(compare) : data;
   const table = document.getElementById('table');
   table.innerHTML = `
     <tr>
