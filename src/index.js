@@ -1,6 +1,9 @@
 import { getScores, postScore } from './api.js';
+import startDark from './darkmode.js';
 import showData from './display.js';
 import './style.scss';
+
+startDark();
 
 document.addEventListener('submit', (e) => {
   const [name, score, errors] = ['nameInput', 'scoreInput', 'errors'].map((id) => document.getElementById(id));

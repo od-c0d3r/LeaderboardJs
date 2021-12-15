@@ -1,5 +1,14 @@
 @import "https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lobster&display=swap";
 
+.darkmode--activated {
+  color: white;
+}
+
+.darkmode--activated tr:nth-child(even) {
+  background-color: yellow;
+  color: black;
+}
+
 main {
   font-family: "Coming Soon", cursive;
   position: relative;
@@ -86,7 +95,8 @@ main {
     }
 
     #errors {
-      color: rgb(180, 0, 0);
+      color: rgb(255, 0, 0);
+      font-size: large;
     }
   }
 }
