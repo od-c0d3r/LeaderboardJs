@@ -1,3 +1,5 @@
+import { getScores } from './api.js';
+
 export default function showData(data) {
   const table = document.getElementById('table');
   table.innerHTML = `
@@ -14,3 +16,5 @@ export default function showData(data) {
     table.appendChild(score);
   });
 }
+
+getScores().then((data) => showData(data.result));

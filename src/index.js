@@ -1,21 +1,18 @@
-import { getScores, postScore } from './api';
-import showData from './display';
+import { getScores, postScore } from './api.js';
+import showData from './display.js';
 import './style.scss';
 
-
-document.addEventListener('submit', e => {
-    const [name, score] = ['nameInput', 'scoreInput'].map(id => document.getElementById(id).value);
-    postScore({ user: name, score: score }).then(data => {
-        console.log(data);
-    });
+document.addEventListener('submit', (e) => {
+  const [name, score, errors] = ['nameInput', 'scoreInput', 'errors'].map((id) => document.getElementById(id));
+  if (score.value > 0) {
+    postScore({ user: name.value, score: score.value }).then((data) => data.message);
     document.forms[0].reset();
-    e.preventDefault();
+  } else {
+    errors.innerHTML = '* Please, enter new score';
+  }
+  e.preventDefault();
 });
 
-document.addEventListener('click', e => {
-    if (e.target.id == 'refreshBtn') {
-        getScores().then(data => {
-            showData(data.result)
-        });
-    }
-})
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'refreshBtn') getScores().then((data) => showData(data.result));
+});

@@ -1,4 +1,4 @@
-const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/'
+const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 const GAME_ID = 'c1G9vyVIErBZnFe8cXpl';
 
 function gamePostOptions() {
@@ -12,7 +12,6 @@ function gamePostOptions() {
 }
 
 function scorePostOptions(obj) {
-  console.log(obj)
   return {
     method: 'POST',
     body: JSON.stringify(obj),
@@ -23,16 +22,16 @@ function scorePostOptions(obj) {
 }
 
 export async function createNewGame() {
-  const newGame = await fetch(`${API}games/`, gamePostOptions())
-  return newGame.json()
+  const newGame = await fetch(`${API}/games/`, gamePostOptions());
+  return newGame.json();
 }
 
 export async function postScore(scoreObj) {
-  const response = await fetch(`${API}games/${GAME_ID}/scores/`, scorePostOptions(scoreObj))
-  return response.json()
+  const response = await fetch(`${API}/games/${GAME_ID}/scores/`, scorePostOptions(scoreObj));
+  return response.json();
 }
 
 export async function getScores() {
-  const response = await fetch(`${API}games/${GAME_ID}/scores/`);
-  return response.json()
+  const response = await fetch(`${API}/games/${GAME_ID}/scores/`);
+  return response.json();
 }

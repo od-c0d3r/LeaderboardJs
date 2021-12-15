@@ -63,7 +63,7 @@ main {
   #boardForm {
     justify-self: start;
 
-    #socreForm {
+    #scoreForm {
       display: grid;
       grid-template-columns: auto auto;
       grid-template-rows: auto auto auto;
@@ -83,6 +83,10 @@ main {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
       }
+    }
+
+    #errors {
+      color: rgb(180, 0, 0);
     }
   }
 }
