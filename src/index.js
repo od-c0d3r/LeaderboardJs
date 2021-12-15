@@ -1,7 +1,7 @@
 import './style.scss';
-import './darkmode.js';
-import { getScores, postScore } from './api.js';
-import { showData, updateTable } from './display.js';
+import './modules/darkmode.js';
+import { getScores, postScore } from './modules/api.js';
+import { showData, updateTable } from './modules/display.js';
 
 document.addEventListener('submit', (e) => {
   const [name, score, errors] = ['nameInput', 'scoreInput', 'errors'].map((id) => document.getElementById(id));

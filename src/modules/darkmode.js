@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import Darkmode from 'darkmode-js';
 
 const options = {
