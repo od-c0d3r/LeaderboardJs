@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import Darkmode from 'darkmode-js';
 
 const options = {
@@ -15,6 +14,8 @@ const options = {
   autoMatchOsTheme: true,
 };
 
-export default function startDark() {
+function startDark() {
   new Darkmode(options).showWidget();
 }
+
+startDark();

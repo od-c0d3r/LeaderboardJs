@@ -1,14 +1,12 @@
-import { getScores, postScore } from './api.js';
-import startDark from './darkmode.js';
-import showData from './display.js';
 import './style.scss';
-
-startDark();
+import './darkmode.js';
+import showData from './display.js';
+import { getScores, postScore } from './api.js';
 
 document.addEventListener('submit', (e) => {
   const [name, score, errors] = ['nameInput', 'scoreInput', 'errors'].map((id) => document.getElementById(id));
   if (score.value > 0) {
-    postScore({ user: name.value, score: score.value }).then((data) => data.message);
+    postScore({ user: name.value, score: score.value })
     document.forms[0].reset();
   } else {
     errors.innerHTML = '* Please, enter new score';
