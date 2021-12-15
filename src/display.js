@@ -1,9 +1,14 @@
 export default function showData(data) {
   const table = document.getElementById('table');
+  table.innerHTML = `
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+    </tr>`;
   data.forEach((scoreObj) => {
     const score = document.createElement('tr');
     score.innerHTML = `
-            <td>${scoreObj.name}</td>
+            <td>${scoreObj.user}</td>
             <td>${scoreObj.score}</td>
         `;
     table.appendChild(score);
