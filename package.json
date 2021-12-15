@@ -39,6 +39,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
+    "darkmode-js": "^1.5.7",
     "lodash": "^4.17.21"
   }
 }

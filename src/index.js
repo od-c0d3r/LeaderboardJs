@@ -1,5 +1,21 @@
 import './style.scss';
-import data from './data.js';
-import showData from './display.js';
+import './modules/darkmode.js';
+import { getScores, postScore } from './modules/api.js';
+import { showData, updateTable } from './modules/display.js';
 
-showData(data);
+document.addEventListener('submit', (e) => {
+  const [name, score, errors] = ['nameInput', 'scoreInput', 'errors'].map((id) => document.getElementById(id));
+  if (score.value > 0) {
+    postScore({ user: name.value, score: score.value });
+    updateTable({ user: name.value, score: score.value });
+    document.forms[0].reset();
+  } else {
+    errors.innerHTML = '* Please, enter new score';
+  }
+  e.preventDefault();
+});
+
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'refreshBtn') getScores().then((data) => showData(data.result));
+  if (e.target.id === 'sortBtn') getScores().then((data) => showData(data.result, true));
+});

@@ -4,6 +4,8 @@
 
 > Milestone 1 : Set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features.
 
+> Milestone 2 : Sending and receiving data from/to the Leaderboard API.
+
 <div style="float:right;">
 
 <img align="right" src="./doc/app_screenshot.jpeg" style="width:450px;">
@@ -49,6 +51,10 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledge
+
+ - Thanks to Wogan from [stackoverflow](https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value#:~:text=it's%20easy%20enough%20to%20write%20your%20own%20comparison%20function%3A) on how to sort Array of objects bassed on a property.
 
 ## 📝 License
 
