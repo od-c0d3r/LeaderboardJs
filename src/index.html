@@ -10,31 +10,47 @@
 <body>
     <main>
         <section id="boardDisplay">
-            <h1 id="boardTitle">
-                LEADERBOARD
-            </h1>
-            <h3>Reacent scores</h3>
-            <div id="refreshDiv">
-                <button id="refreshBtn" type="button">Refresh</button>
-                <button id="sortBtn" type="button">Sort</button>
+            <div class="card">
+                <h1 id="boardTitle">
+                    LEADERBOARD
+                </h1>
+                <h3>Reacent scores</h3>
+                <div id="btnsDiv">
+                    <button id="refreshBtn" type="button">Refresh</button>
+                    <button id="sortBtn" type="button">Sort</button>
+                </div>
+                <div class="tableScroll">
+                    <table id="table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <table id="table">
-                <tr>
-                    <th>Name</th>
-                    <th>Score</th>
-                </tr>
-            </table>
         </section>
         <section id="boardForm">
-            <h3>Add your score</h3>
-            <form id="scoreForm">
-                <input type="text" name="username" id="nameInput" placeholder="Name" required>
-                <input type="number" name="score" id="scoreInput" placeholder="Score" required>
-                <input type="submit" value="Submit" id="submitBtn">
-            </form>
+            <div class="card">
+                <h2>Add your score</h2>
+                <form id="scoreForm">
+                    <label class="input">
+                        <input class="input__field" type="text" name="username" id="nameInput" placeholder=" " required>
+                        <span class="input__label">Name</span>
+                    </label>
+                    <br>
+                    <label class="input">
+                        <input class="input__field" type="number" name="score" id="scoreInput" placeholder=" " required>
+                        <span class="input__label">Score</span>
+                    </label>
+                    <div class="button-group">
+                        <button type="submit" value="Submit" id="submitBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
             <div id="errors">
             </div>
         </section>
+
     </main>
 </body>
 

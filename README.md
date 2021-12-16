@@ -54,7 +54,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledge
 
- - Thanks to Wogan from [stackoverflow](https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value#:~:text=it's%20easy%20enough%20to%20write%20your%20own%20comparison%20function%3A) on how to sort Array of objects bassed on a property.
+- Thanks to [Wogan](https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value#:~:text=it's%20easy%20enough%20to%20write%20your%20own%20comparison%20function%3A) on how to sort Array of objects bassed on a property.
+- Thanks to [meodai](https://codepen.io/meodai/pen/rNedxBa) for the cards design.  
 
 ## 📝 License
 

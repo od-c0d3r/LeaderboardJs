@@ -1,4 +1,5 @@
 import './style.scss';
+import './card.scss';
 import './modules/darkmode.js';
 import { getGameIdLocal, setGameLocal } from './modules/storage';
 import { showData, updateTable } from './modules/display.js';
