@@ -1,7 +1,7 @@
 import './style.scss';
 import './card.scss';
 import './modules/darkmode.js';
-import { getGameIdLocal, setGameLocal } from './modules/storage';
+import { getGameIdLocal, setGameLocal } from './modules/storage.js';
 import { showData, updateTable } from './modules/display.js';
 import { createNewGame, getScores, postScore } from './modules/api.js';
 
@@ -24,7 +24,7 @@ document.addEventListener('click', (e) => {
 
 window.addEventListener('load', () => {
   if (!getGameIdLocal()) {
-    createNewGame().then(data => {
+    createNewGame().then((data) => {
       const id = data.result.split('').splice(14, 20).join('');
       setGameLocal(id);
       return true;

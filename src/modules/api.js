@@ -1,4 +1,4 @@
-import { getGameIdLocal } from "./storage";
+import { getGameIdLocal } from './storage.js';
 
 const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 const GAME_ID = 'c1G9vyVIErBZnFe8cXpl';

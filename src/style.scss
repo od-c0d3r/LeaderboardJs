@@ -25,11 +25,11 @@ main {
       display: inline-block;
     }
 
-    .tableScroll{
+    .tableScroll {
       max-height: 400px;
       overflow-y: scroll;
     }
-    
+
     #boardTitle {
       position: absolute;
       top: -90px;
@@ -58,7 +58,7 @@ main {
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: left;
-        background-color: #000000;
+        background-color: #000;
         color: white;
       }
 
