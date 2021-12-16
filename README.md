@@ -3,7 +3,9 @@
 # LeaderboardJs
 
 > Milestone 1 : Set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features.
+
 > Milestone 2 : Sending and receiving data from/to the Leaderboard API.
+
 > Milestone 3 : Finalize the Leaderboard list app, adding the styles needed to make it look great.
 
 <div style="float:right;">
