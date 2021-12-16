@@ -1,5 +1,3 @@
-import { getScores } from './api.js';
-
 function compare(a, b) {
   if (+a.score < +b.score) {
     return -1;
@@ -37,5 +35,3 @@ export function showData(data, sorted = false) {
     table.appendChild(score);
   });
 }
-
-getScores().then((data) => showData(data.result));

@@ -1,3 +1,5 @@
+import { getGameIdLocal } from './storage.js';
+
 const API = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 const GAME_ID = 'c1G9vyVIErBZnFe8cXpl';
 
@@ -6,7 +8,7 @@ function gamePostOptions() {
     method: 'POST',
     body: JSON.stringify({ name: 'newGame' }),
     headers: {
-      'Content-type': 'application/json; charset=-8',
+      'Content-type': 'application/json',
     },
   };
 }
@@ -16,7 +18,7 @@ function scorePostOptions(obj) {
     method: 'POST',
     body: JSON.stringify(obj),
     headers: {
-      'Content-type': 'application/json; charset=UTF-8',
+      'Content-type': 'application/json',
     },
   };
 }
@@ -27,11 +29,11 @@ export async function createNewGame() {
 }
 
 export async function postScore(scoreObj) {
-  const response = await fetch(`${API}/games/${GAME_ID}/scores/`, scorePostOptions(scoreObj));
+  const response = await fetch(`${API}/games/${getGameIdLocal() || GAME_ID}/scores/`, scorePostOptions(scoreObj));
   return response.json();
 }
 
 export async function getScores() {
-  const response = await fetch(`${API}/games/${GAME_ID}/scores/`);
+  const response = await fetch(`${API}/games/${getGameIdLocal() || GAME_ID}/scores/`);
   return response.json();
 }

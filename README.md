@@ -6,6 +6,8 @@
 
 > Milestone 2 : Sending and receiving data from/to the Leaderboard API.
 
+> Milestone 3 : Finalize the Leaderboard list app, adding the styles needed to make it look great.
+
 <div style="float:right;">
 
 <img align="right" src="./doc/app_screenshot.jpeg" style="width:450px;">
@@ -26,11 +28,11 @@
 
 To get a local copy up and running follow these simple example steps
 
- - from your terminal enter in sequence 
-   - `git clone https://github.com/od-c0d3r/LeaderboardJs.git`
-   - `code LeaderboardJs`
-   - `npm i`
-   - `npm start`
+- from your terminal enter in sequence 
+  - `git clone https://github.com/od-c0d3r/LeaderboardJs.git`
+  - `code LeaderboardJs`
+  - `npm i`
+  - `npm start`
 
 
 ## Authors
@@ -54,7 +56,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledge
 
- - Thanks to Wogan from [stackoverflow](https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value#:~:text=it's%20easy%20enough%20to%20write%20your%20own%20comparison%20function%3A) on how to sort Array of objects bassed on a property.
+- Thanks to [Wogan](https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value#:~:text=it's%20easy%20enough%20to%20write%20your%20own%20comparison%20function%3A) on how to sort Array of objects bassed on a property.
+- Thanks to [meodai](https://codepen.io/meodai/pen/rNedxBa) for the cards design.  
 
 ## 📝 License
 
