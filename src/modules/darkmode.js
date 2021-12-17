@@ -15,8 +15,8 @@ const options = {
   autoMatchOsTheme: true,
 };
 
-function startDark() {
+function startDark(options) {
   new Darkmode(options).showWidget();
 }
 
-startDark();
+startDark(options);

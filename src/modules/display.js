@@ -8,8 +8,12 @@ function compare(a, b) {
   return 0;
 }
 
+function getTable() {
+  return document.getElementById('table');
+}
+
 export function updateTable(data) {
-  const table = document.getElementById('table');
+  const table = getTable();
   const score = document.createElement('tr');
   score.innerHTML = `
             <td>${data.user}</td>
@@ -20,7 +24,7 @@ export function updateTable(data) {
 
 export function showData(data, sorted = false) {
   const arr = sorted ? data.sort(compare) : data;
-  const table = document.getElementById('table');
+  const table = getTable();
   table.innerHTML = `
     <tr>
       <th>Name</th>
