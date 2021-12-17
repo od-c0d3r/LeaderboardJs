@@ -17,12 +17,12 @@ export function createElementWith(id) {
 }
 
 export function htmlScore(obj) {
-  return `<td>${obj.user}</td><td>${obj.score}</td>`
+  return `<td>${obj.user}</td><td>${obj.score}</td>`;
 }
 
 export function updateTable(data) {
   const table = getElementWith('table');
-  const score = createElementWith('tr')
+  const score = createElementWith('tr');
   score.innerHTML = htmlScore(data);
   table.appendChild(score);
   return true;
@@ -38,7 +38,7 @@ export function showData(data, sorted = false) {
     </tr>`;
   arr.forEach((scoreObj) => {
     const score = createElementWith('tr');
-    score.innerHTML = htmlScore(scoreObj)
+    score.innerHTML = htmlScore(scoreObj);
     table.appendChild(score);
   });
 }

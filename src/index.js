@@ -21,7 +21,6 @@ document.addEventListener('submit', (e) => {
 document.addEventListener('click', (e) => {
   if (e.target.id === 'refreshBtn') getScores().then((data) => showData(data.result));
   if (e.target.id === 'sortBtn') {
-    console.log(e);
     getScores().then((data) => showData(data.result, true));
   }
 });
