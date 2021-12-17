@@ -8,6 +8,8 @@
 
 > Milestone 3 : Finalize the Leaderboard list app, adding the styles needed to make it look great.
 
+> Milestone 4 : Start testing and write unit tests.
+
 <div style="float:right;">
 
 <img align="right" src="./doc/app_screenshot.jpeg" style="width:450px;">
@@ -34,6 +36,8 @@ To get a local copy up and running follow these simple example steps
   - `npm i`
   - `npm start`
 
+- To start Jest testing
+ - `npm test`
 
 ## Authors
 
