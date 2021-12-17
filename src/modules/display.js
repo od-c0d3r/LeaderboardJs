@@ -8,15 +8,15 @@ function compare(a, b) {
   return 0;
 }
 
-function getElementWith(id) {
+export function getElementWith(id) {
   return document.getElementById(id);
 }
 
-function createElementWith(id) {
+export function createElementWith(id) {
   return document.createElement(id);
 }
 
-function htmlScore(obj) {
+export function htmlScore(obj) {
   return `<td>${obj.user}</td><td>${obj.score}</td>`
 }
 
@@ -25,6 +25,7 @@ export function updateTable(data) {
   const score = createElementWith('tr')
   score.innerHTML = htmlScore(data);
   table.appendChild(score);
+  return true;
 }
 
 export function showData(data, sorted = false) {

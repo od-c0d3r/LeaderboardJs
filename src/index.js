@@ -28,7 +28,6 @@ document.addEventListener('click', (e) => {
 
 window.addEventListener('load', () => {
   if (!getGameIdLocal()) {
-    console.log(getGameIdLocal());
     createNewGame().then((data) => {
       const id = data.result.split('').splice(14, 20).join('');
       setGameLocal(id);
