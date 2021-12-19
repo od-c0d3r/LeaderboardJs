@@ -25,8 +25,6 @@
 
 [Live Demo Link](https://od-c0d3r.github.io/LeaderboardJs/dist/)
 
-<div style="float:right;">
-
 ## App Tree 
 ```
 .
@@ -63,8 +61,6 @@
 ├── README.md
 └── webpack.config.js
 ```
-
-</div>
 
 ## Getting Started
 
