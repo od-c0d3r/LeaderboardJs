@@ -25,6 +25,46 @@
 
 [Live Demo Link](https://od-c0d3r.github.io/LeaderboardJs/dist/)
 
+<div style="float:right;">
+
+## App Tree 
+```
+.
+├── .github
+│   └── workflows
+│       └── linters.yml
+├── dist
+│   ├── index.bundle.js
+│   └── index.html
+├── doc
+│   ├── app_screenshot.jpeg
+│   └── MIT.md
+├── __tests__
+│   └── modules
+│       └── display.spec.js
+├── src
+│   ├── modules
+│   │   ├── api.js
+│   │   ├── darkmode.js
+│   │   ├── display.js
+│   │   └── storage.js
+│   ├── styles
+│   │   ├── card.scss
+│   │   └── style.scss
+│   ├── index.html
+│   └── index.js
+├── .babelrc
+├── .eslintrc.json
+├── .gitignore
+├── .hintrc
+├── .stylelintrc.json
+├── package-lock.json
+├── package.json
+├── README.md
+└── webpack.config.js
+```
+
+</div>
 
 ## Getting Started
 
