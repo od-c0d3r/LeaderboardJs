@@ -11,6 +11,7 @@ document.addEventListener('submit', (e) => {
     postScore({ user: name.value, score: score.value });
     updateTable({ user: name.value, score: score.value });
     document.forms[0].reset();
+    errors.innerHTML = '';
   } else {
     errors.innerHTML = '* Please, enter new score';
   }
@@ -19,7 +20,9 @@ document.addEventListener('submit', (e) => {
 
 document.addEventListener('click', (e) => {
   if (e.target.id === 'refreshBtn') getScores().then((data) => showData(data.result));
-  if (e.target.id === 'sortBtn') getScores().then((data) => showData(data.result, true));
+  if (e.target.id === 'sortBtn') {
+    getScores().then((data) => showData(data.result, true));
+  }
 });
 
 window.addEventListener('load', () => {
